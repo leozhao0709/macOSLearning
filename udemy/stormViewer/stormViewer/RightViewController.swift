@@ -13,8 +13,6 @@ class RightViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        self.view.wantsLayer = true
-        self.view.layer?.backgroundColor = NSColor.yellow.cgColor
     }
     
     override func loadView() {
