@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		D49F19112186CD3D004DCAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F19102186CD3D004DCAE1 /* AppDelegate.swift */; };
-		D49F19132186CD3D004DCAE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F19122186CD3D004DCAE1 /* ViewController.swift */; };
 		D49F19152186CD3E004DCAE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D49F19142186CD3E004DCAE1 /* Assets.xcassets */; };
 		D49F19182186CD3E004DCAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49F19162186CD3E004DCAE1 /* Main.storyboard */; };
-		D49F19212186D0FA004DCAE1 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F19202186D0FA004DCAE1 /* WindowController.swift */; };
+		D49F19252187BA2B004DCAE1 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F19242187BA2B004DCAE1 /* MainWindowController.swift */; };
+		D49F192E2187C4CD004DCAE1 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F192C2187C4CD004DCAE1 /* SplitViewController.swift */; };
+		D49F19372187DC0C004DCAE1 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F19362187DC0C004DCAE1 /* LeftViewController.swift */; };
+		D49F193A2187DC17004DCAE1 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F19382187DC17004DCAE1 /* RightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D49F190D2186CD3D004DCAE1 /* stormViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stormViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49F19102186CD3D004DCAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D49F19122186CD3D004DCAE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D49F19142186CD3E004DCAE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D49F19172186CD3E004DCAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D49F19192186CD3E004DCAE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D49F191A2186CD3E004DCAE1 /* stormViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = stormViewer.entitlements; sourceTree = "<group>"; };
-		D49F19202186D0FA004DCAE1 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		D49F19242187BA2B004DCAE1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		D49F192C2187C4CD004DCAE1 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		D49F19362187DC0C004DCAE1 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		D49F19382187DC17004DCAE1 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,14 @@
 			isa = PBXGroup;
 			children = (
 				D49F19102186CD3D004DCAE1 /* AppDelegate.swift */,
-				D49F19122186CD3D004DCAE1 /* ViewController.swift */,
 				D49F19142186CD3E004DCAE1 /* Assets.xcassets */,
 				D49F19162186CD3E004DCAE1 /* Main.storyboard */,
 				D49F19192186CD3E004DCAE1 /* Info.plist */,
 				D49F191A2186CD3E004DCAE1 /* stormViewer.entitlements */,
-				D49F19202186D0FA004DCAE1 /* WindowController.swift */,
+				D49F19242187BA2B004DCAE1 /* MainWindowController.swift */,
+				D49F192C2187C4CD004DCAE1 /* SplitViewController.swift */,
+				D49F19362187DC0C004DCAE1 /* LeftViewController.swift */,
+				D49F19382187DC17004DCAE1 /* RightViewController.swift */,
 			);
 			path = stormViewer;
 			sourceTree = "<group>";
@@ -136,9 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49F19132186CD3D004DCAE1 /* ViewController.swift in Sources */,
-				D49F19212186D0FA004DCAE1 /* WindowController.swift in Sources */,
 				D49F19112186CD3D004DCAE1 /* AppDelegate.swift in Sources */,
+				D49F19372187DC0C004DCAE1 /* LeftViewController.swift in Sources */,
+				D49F193A2187DC17004DCAE1 /* RightViewController.swift in Sources */,
+				D49F19252187BA2B004DCAE1 /* MainWindowController.swift in Sources */,
+				D49F192E2187C4CD004DCAE1 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
