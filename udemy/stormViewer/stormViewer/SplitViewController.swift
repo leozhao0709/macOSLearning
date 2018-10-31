@@ -19,8 +19,6 @@ class SplitViewController: NSSplitViewController {
         self.addChild(LeftViewController())
         self.addChild(RightViewController())
         
-        self.splitView.adjustSubviews()
-        
 //        self.splitView.dividerStyle = .thin
 //        self.splitView.isVertical = false
         
@@ -29,10 +27,6 @@ class SplitViewController: NSSplitViewController {
     override func loadView() {
         super.loadView()
         self.view.setFrameSize(NSSize(width: 480, height: 300))
-    }
-    
-    override func splitViewWillResizeSubviews(_ notification: Notification) {
-        print(notification)
     }
     
 }

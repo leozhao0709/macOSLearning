@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58F4C153161385C1EFA5B022 /* Pods_stormViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FA17591C5DC2FF5FD4923C /* Pods_stormViewer.framework */; };
+		D44FA44B2188FDBB000B963E /* photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = D44FA44A2188FDBB000B963E /* photos.plist */; };
 		D49F19112186CD3D004DCAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49F19102186CD3D004DCAE1 /* AppDelegate.swift */; };
 		D49F19152186CD3E004DCAE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D49F19142186CD3E004DCAE1 /* Assets.xcassets */; };
 		D49F19182186CD3E004DCAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D49F19162186CD3E004DCAE1 /* Main.storyboard */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44DF7BDD9D6FA3DF8C7214CF /* Pods-stormViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stormViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stormViewer/Pods-stormViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		AEBCAB1D44D28945877FD431 /* Pods-stormViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stormViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-stormViewer/Pods-stormViewer.release.xcconfig"; sourceTree = "<group>"; };
+		D44FA44A2188FDBB000B963E /* photos.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = photos.plist; sourceTree = "<group>"; };
 		D49F190D2186CD3D004DCAE1 /* stormViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stormViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49F19102186CD3D004DCAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D49F19142186CD3E004DCAE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -27,6 +32,7 @@
 		D49F192C2187C4CD004DCAE1 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		D49F19362187DC0C004DCAE1 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		D49F19382187DC17004DCAE1 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		D9FA17591C5DC2FF5FD4923C /* Pods_stormViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stormViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F4C153161385C1EFA5B022 /* Pods_stormViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03A48FA977B528455A0FFCEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9FA17591C5DC2FF5FD4923C /* Pods_stormViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57033167B50C6C83144100F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44DF7BDD9D6FA3DF8C7214CF /* Pods-stormViewer.debug.xcconfig */,
+				AEBCAB1D44D28945877FD431 /* Pods-stormViewer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D49F19042186CD3D004DCAE1 = {
 			isa = PBXGroup;
 			children = (
 				D49F190F2186CD3D004DCAE1 /* stormViewer */,
 				D49F190E2186CD3D004DCAE1 /* Products */,
+				57033167B50C6C83144100F8 /* Pods */,
+				03A48FA977B528455A0FFCEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +94,7 @@
 				D49F192C2187C4CD004DCAE1 /* SplitViewController.swift */,
 				D49F19362187DC0C004DCAE1 /* LeftViewController.swift */,
 				D49F19382187DC17004DCAE1 /* RightViewController.swift */,
+				D44FA44A2188FDBB000B963E /* photos.plist */,
 			);
 			path = stormViewer;
 			sourceTree = "<group>";
@@ -79,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D49F191D2186CD3E004DCAE1 /* Build configuration list for PBXNativeTarget "stormViewer" */;
 			buildPhases = (
+				0014A25CF1BE8D5D5BC028E1 /* [CP] Check Pods Manifest.lock */,
 				D49F19092186CD3D004DCAE1 /* Sources */,
 				D49F190A2186CD3D004DCAE1 /* Frameworks */,
 				D49F190B2186CD3D004DCAE1 /* Resources */,
+				205E0FFCB20777E891E43E4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44FA44B2188FDBB000B963E /* photos.plist in Resources */,
 				D49F19152186CD3E004DCAE1 /* Assets.xcassets in Resources */,
 				D49F19182186CD3E004DCAE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0014A25CF1BE8D5D5BC028E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stormViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		205E0FFCB20777E891E43E4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-stormViewer/Pods-stormViewer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stormViewer/Pods-stormViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D49F19092186CD3D004DCAE1 /* Sources */ = {
@@ -281,9 +358,11 @@
 		};
 		D49F191E2186CD3E004DCAE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44DF7BDD9D6FA3DF8C7214CF /* Pods-stormViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = stormViewer/stormViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZQNTYXCS7L;
@@ -292,17 +371,21 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.test.stormViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		D49F191F2186CD3E004DCAE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBCAB1D44D28945877FD431 /* Pods-stormViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = stormViewer/stormViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZQNTYXCS7L;
@@ -311,8 +394,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.test.stormViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
