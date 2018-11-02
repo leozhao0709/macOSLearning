@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4109C230256990BF7F16FA3B /* Pods_GridBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EF4906B1D9EC5604AEA49F /* Pods_GridBrowser.framework */; };
 		D406D910218A566A00FF7FB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D406D90F218A566A00FF7FB0 /* AppDelegate.swift */; };
 		D406D912218A566A00FF7FB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D406D911218A566A00FF7FB0 /* ViewController.swift */; };
 		D406D914218A566C00FF7FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D406D913218A566C00FF7FB0 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A49E805444D60403F9A4211 /* Pods-GridBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GridBrowser/Pods-GridBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		8ABF1A396642D74B8540E9CB /* Pods-GridBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-GridBrowser/Pods-GridBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		D406D90C218A566A00FF7FB0 /* GridBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D406D90F218A566A00FF7FB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D406D911218A566A00FF7FB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		D406D916218A566C00FF7FB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D406D918218A566C00FF7FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D406D919218A566C00FF7FB0 /* GridBrowser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GridBrowser.entitlements; sourceTree = "<group>"; };
+		D4EF4906B1D9EC5604AEA49F /* Pods_GridBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4109C230256990BF7F16FA3B /* Pods_GridBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4817BC10530C1B33CDC64B5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4EF4906B1D9EC5604AEA49F /* Pods_GridBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFAA7E896BB903F3B534421E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A49E805444D60403F9A4211 /* Pods-GridBrowser.debug.xcconfig */,
+				8ABF1A396642D74B8540E9CB /* Pods-GridBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D406D903218A566A00FF7FB0 = {
 			isa = PBXGroup;
 			children = (
 				D406D90E218A566A00FF7FB0 /* GridBrowser */,
 				D406D90D218A566A00FF7FB0 /* Products */,
+				CFAA7E896BB903F3B534421E /* Pods */,
+				4817BC10530C1B33CDC64B5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D406D91C218A566C00FF7FB0 /* Build configuration list for PBXNativeTarget "GridBrowser" */;
 			buildPhases = (
+				606AFBB2D9EFDEB6BF6E35AA /* [CP] Check Pods Manifest.lock */,
 				D406D908218A566A00FF7FB0 /* Sources */,
 				D406D909218A566A00FF7FB0 /* Frameworks */,
 				D406D90A218A566A00FF7FB0 /* Resources */,
+				729DDD522E5EC2C18E3ED3C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -95,6 +121,11 @@
 				TargetAttributes = {
 					D406D90B218A566A00FF7FB0 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -127,6 +158,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		606AFBB2D9EFDEB6BF6E35AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GridBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		729DDD522E5EC2C18E3ED3C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GridBrowser/Pods-GridBrowser-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GridBrowser/Pods-GridBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D406D908218A566A00FF7FB0 /* Sources */ = {
@@ -269,9 +339,11 @@
 		};
 		D406D91D218A566C00FF7FB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A49E805444D60403F9A4211 /* Pods-GridBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GridBrowser/GridBrowser.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZQNTYXCS7L;
@@ -282,15 +354,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shutterfly.GridBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		D406D91E218A566C00FF7FB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABF1A396642D74B8540E9CB /* Pods-GridBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GridBrowser/GridBrowser.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = ZQNTYXCS7L;
@@ -301,6 +376,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shutterfly.GridBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

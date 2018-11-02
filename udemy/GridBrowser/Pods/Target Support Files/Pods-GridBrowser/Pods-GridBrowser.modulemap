@@ -1,0 +1,6 @@
+framework module Pods_GridBrowser {
+  umbrella header "Pods-GridBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

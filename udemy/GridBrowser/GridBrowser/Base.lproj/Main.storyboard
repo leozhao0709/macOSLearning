@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -689,7 +689,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="650" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
                         <value key="minSize" type="size" width="650" height="270"/>
                         <toolbar key="toolbar" implicitIdentifier="24019C87-4B22-4D0B-87EC-03C106871F0F" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="E19-0R-AL0">
                             <allowedToolbarItems>
@@ -707,6 +707,9 @@
                                                 <segment image="NSGoRightTemplate" width="32" tag="1"/>
                                             </segments>
                                         </segmentedCell>
+                                        <connections>
+                                            <action selector="navigationClicked:" target="Oky-zY-oP4" id="z8r-kH-GEO"/>
+                                        </connections>
                                     </segmentedControl>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="A81F3FC5-88A9-460D-B8F8-48C9173B9B40" label="" paletteLabel="" sizingBehavior="auto" id="Koo-M3-oD5">
@@ -719,6 +722,9 @@
                                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
+                                        <connections>
+                                            <action selector="urlEntered:" target="Oky-zY-oP4" id="qci-m9-0IB"/>
+                                        </connections>
                                     </textField>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="9EB70F8A-415F-4C7D-BD29-5E7138B0BF76" label="" paletteLabel="" sizingBehavior="auto" id="aoN-rt-XZo">
@@ -750,7 +756,7 @@
                                     <segmentedControl key="view" verticalHuggingPriority="750" id="L9C-R2-qzA">
                                         <rect key="frame" x="0.0" y="14" width="66" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="selectOne" id="udi-Ch-qma">
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedRounded" trackingMode="momentary" id="udi-Ch-qma">
                                             <font key="font" metaFont="system"/>
                                             <segments>
                                                 <segment image="NSAddTemplate" width="32"/>
@@ -759,6 +765,26 @@
                                                 </segment>
                                             </segments>
                                         </segmentedCell>
+                                        <connections>
+                                            <action selector="adjustRow:" target="Oky-zY-oP4" id="E7G-GY-7lG"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="0AB7E44A-565C-40DC-BB2E-0B5954CFB103" label="" paletteLabel="" sizingBehavior="auto" id="QED-zp-Err">
+                                    <nil key="toolTip"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" id="jPv-aA-1fm">
+                                        <rect key="frame" x="0.0" y="14" width="70" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="momentary" id="wlN-Zv-ld4">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment image="NSAddTemplate" width="32"/>
+                                                <segment image="NSRemoveTemplate" width="32" tag="1"/>
+                                            </segments>
+                                        </segmentedCell>
+                                        <connections>
+                                            <action selector="adjustCol:" target="Oky-zY-oP4" id="Jec-Aa-MJJ"/>
+                                        </connections>
                                     </segmentedControl>
                                 </toolbarItem>
                             </allowedToolbarItems>
@@ -771,7 +797,7 @@
                                 <toolbarItem reference="yxF-hs-MdT"/>
                                 <toolbarItem reference="Yay-F4-27l"/>
                                 <toolbarItem reference="fDd-JO-MPJ"/>
-                                <toolbarItem reference="yxF-hs-MdT"/>
+                                <toolbarItem reference="QED-zp-Err"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -797,7 +823,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="62" y="734"/>
         </scene>
     </scenes>
     <resources>
