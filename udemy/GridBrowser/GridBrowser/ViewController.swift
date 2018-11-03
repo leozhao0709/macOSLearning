@@ -10,9 +10,10 @@ import Cocoa
 import WebKit
 import SnapKit
 
-class ViewController: NSViewController, WKNavigationDelegate {
+class ViewController: NSViewController, WKNavigationDelegate, NSGestureRecognizerDelegate {
 
     weak var rowStackView: NSStackView?
+    var selectedWebView: WKWebView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,15 +43,72 @@ class ViewController: NSViewController, WKNavigationDelegate {
         webView.wantsLayer = true
         webView.load(URLRequest(url: URL(string:"https://www.apple.com")!))
         
+        let gestureRecognizer = NSClickGestureRecognizer(target: self, action: #selector(self.selectWebView(gestureRecognizer:)))
+        gestureRecognizer.delegate = self
+        webView.addGestureRecognizer(gestureRecognizer)
+        
+        if self.selectedWebView == nil {
+            self.selectWebView(gestureRecognizer: gestureRecognizer)
+        }
+        
         return webView
     }
     
+    func gestureRecognizer(_ gestureRecognizer: NSGestureRecognizer, shouldAttemptToRecognizeWith event: NSEvent) -> Bool {
+        if gestureRecognizer.view == self.selectedWebView {
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    @objc
+    func selectWebView(gestureRecognizer: NSClickGestureRecognizer) {
+        guard let webView = gestureRecognizer.view as? WKWebView else {return}
+        
+        if let selectedWebView = self.selectedWebView {
+            selectedWebView.layer?.borderWidth = 0
+        }
+        
+        self.selectedWebView = webView
+        self.selectedWebView?.wantsLayer = true
+        self.selectedWebView?.layer?.borderWidth = 4
+        self.selectedWebView?.layer?.borderColor = NSColor.blue.cgColor
+
+        if let windowController = self.view.window?.windowController as? WindowController {
+            windowController.addressEntry.stringValue = self.selectedWebView?.url?.absoluteString ?? ""
+        }
+    }
+    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        guard let selectedWebView = self.selectedWebView else { return }
+        
+        if let windowController = self.view.window?.windowController as? WindowController {
+            windowController.addressEntry.stringValue = selectedWebView.url?.absoluteString ?? ""
+        }
+    }
+    
     @IBAction func urlEntered(_ sender: NSTextField) {
-        print("urlEntered...")
+        guard let selectedWebView = self.selectedWebView else {
+            return
+        }
+        
+        if let url = URL(string: sender.stringValue) {
+            selectedWebView.load(URLRequest(url: url))
+        }
+        
     }
     
     @IBAction func navigationClicked(_ sender: NSSegmentedControl) {
-        print("navigation clicked...")
+        guard let selectedWebView = self.selectedWebView else {
+            return
+        }
+        
+        if sender.selectedSegment == 0 {
+            selectedWebView.goBack()
+        } else {
+            selectedWebView.goForward()
+        }
     }
     
     @IBAction func adjustRow(_ send: NSSegmentedControl) {

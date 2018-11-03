@@ -12,6 +12,7 @@
 		D406D912218A566A00FF7FB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D406D911218A566A00FF7FB0 /* ViewController.swift */; };
 		D406D914218A566C00FF7FB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D406D913218A566C00FF7FB0 /* Assets.xcassets */; };
 		D406D917218A566C00FF7FB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D406D915218A566C00FF7FB0 /* Main.storyboard */; };
+		D4F643C8218C2FA1007D8279 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F643C7218C2FA1007D8279 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D406D918218A566C00FF7FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D406D919218A566C00FF7FB0 /* GridBrowser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GridBrowser.entitlements; sourceTree = "<group>"; };
 		D4EF4906B1D9EC5604AEA49F /* Pods_GridBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F643C7218C2FA1007D8279 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				D406D90F218A566A00FF7FB0 /* AppDelegate.swift */,
 				D406D911218A566A00FF7FB0 /* ViewController.swift */,
+				D4F643C7218C2FA1007D8279 /* WindowController.swift */,
 				D406D913218A566C00FF7FB0 /* Assets.xcassets */,
 				D406D915218A566C00FF7FB0 /* Main.storyboard */,
 				D406D918218A566C00FF7FB0 /* Info.plist */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D406D912218A566A00FF7FB0 /* ViewController.swift in Sources */,
+				D4F643C8218C2FA1007D8279 /* WindowController.swift in Sources */,
 				D406D910218A566A00FF7FB0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

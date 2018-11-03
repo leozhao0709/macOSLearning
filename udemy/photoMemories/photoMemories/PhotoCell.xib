@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PhotoCell" customModule="photoMemories" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="gPr-l9-gBu" id="pWr-Ta-Vmq"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gPr-l9-gBu">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="jDL-wz-cn6"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gPr-l9-gBu" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="GgZ-Jz-8n1"/>
+                <constraint firstAttribute="bottom" secondItem="gPr-l9-gBu" secondAttribute="bottom" id="Src-Ga-eaV"/>
+                <constraint firstAttribute="trailing" secondItem="gPr-l9-gBu" secondAttribute="trailing" id="bTg-R4-fbK"/>
+                <constraint firstItem="gPr-l9-gBu" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="odp-G5-oEB"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
