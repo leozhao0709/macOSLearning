@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4C66A0626BEFC9D00DAFE56 /* dropdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C66A0526BEFC9D00DAFE56 /* dropdownApp.swift */; };
-		D4C66A0826BEFC9D00DAFE56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C66A0726BEFC9D00DAFE56 /* ContentView.swift */; };
-		D4C66A0A26BEFC9E00DAFE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C66A0926BEFC9E00DAFE56 /* Assets.xcassets */; };
-		D4C66A0D26BEFC9E00DAFE56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C66A0C26BEFC9E00DAFE56 /* Preview Assets.xcassets */; };
+		D45ADD1D26C19BEE0029A305 /* tableViewLearnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45ADD1C26C19BEE0029A305 /* tableViewLearnApp.swift */; };
+		D45ADD1F26C19BEE0029A305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D45ADD1E26C19BEE0029A305 /* ContentView.swift */; };
+		D45ADD2126C19BF00029A305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45ADD2026C19BF00029A305 /* Assets.xcassets */; };
+		D45ADD2426C19BF00029A305 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45ADD2326C19BF00029A305 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D4C66A0226BEFC9D00DAFE56 /* dropdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C66A0526BEFC9D00DAFE56 /* dropdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropdownApp.swift; sourceTree = "<group>"; };
-		D4C66A0726BEFC9D00DAFE56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D4C66A0926BEFC9E00DAFE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4C66A0C26BEFC9E00DAFE56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D4C66A0E26BEFC9E00DAFE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4C66A0F26BEFC9E00DAFE56 /* dropdown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dropdown.entitlements; sourceTree = "<group>"; };
+		D45ADD1926C19BEE0029A305 /* tableViewLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableViewLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45ADD1C26C19BEE0029A305 /* tableViewLearnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewLearnApp.swift; sourceTree = "<group>"; };
+		D45ADD1E26C19BEE0029A305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D45ADD2026C19BF00029A305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D45ADD2326C19BF00029A305 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D45ADD2526C19BF00029A305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45ADD2626C19BF00029A305 /* tableViewLearn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tableViewLearn.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4C669FF26BEFC9D00DAFE56 /* Frameworks */ = {
+		D45ADD1626C19BEE0029A305 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,39 +34,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D4C669F926BEFC9D00DAFE56 = {
+		D45ADD1026C19BEE0029A305 = {
 			isa = PBXGroup;
 			children = (
-				D4C66A0426BEFC9D00DAFE56 /* dropdown */,
-				D4C66A0326BEFC9D00DAFE56 /* Products */,
+				D45ADD1B26C19BEE0029A305 /* tableViewLearn */,
+				D45ADD1A26C19BEE0029A305 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D4C66A0326BEFC9D00DAFE56 /* Products */ = {
+		D45ADD1A26C19BEE0029A305 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4C66A0226BEFC9D00DAFE56 /* dropdown.app */,
+				D45ADD1926C19BEE0029A305 /* tableViewLearn.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4C66A0426BEFC9D00DAFE56 /* dropdown */ = {
+		D45ADD1B26C19BEE0029A305 /* tableViewLearn */ = {
 			isa = PBXGroup;
 			children = (
-				D4C66A0526BEFC9D00DAFE56 /* dropdownApp.swift */,
-				D4C66A0726BEFC9D00DAFE56 /* ContentView.swift */,
-				D4C66A0926BEFC9E00DAFE56 /* Assets.xcassets */,
-				D4C66A0E26BEFC9E00DAFE56 /* Info.plist */,
-				D4C66A0F26BEFC9E00DAFE56 /* dropdown.entitlements */,
-				D4C66A0B26BEFC9E00DAFE56 /* Preview Content */,
+				D45ADD1C26C19BEE0029A305 /* tableViewLearnApp.swift */,
+				D45ADD1E26C19BEE0029A305 /* ContentView.swift */,
+				D45ADD2026C19BF00029A305 /* Assets.xcassets */,
+				D45ADD2526C19BF00029A305 /* Info.plist */,
+				D45ADD2626C19BF00029A305 /* tableViewLearn.entitlements */,
+				D45ADD2226C19BF00029A305 /* Preview Content */,
 			);
-			path = dropdown;
+			path = tableViewLearn;
 			sourceTree = "<group>";
 		};
-		D4C66A0B26BEFC9E00DAFE56 /* Preview Content */ = {
+		D45ADD2226C19BF00029A305 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D4C66A0C26BEFC9E00DAFE56 /* Preview Assets.xcassets */,
+				D45ADD2326C19BF00029A305 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -74,38 +74,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4C66A0126BEFC9D00DAFE56 /* dropdown */ = {
+		D45ADD1826C19BEE0029A305 /* tableViewLearn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4C66A1226BEFC9E00DAFE56 /* Build configuration list for PBXNativeTarget "dropdown" */;
+			buildConfigurationList = D45ADD2926C19BF00029A305 /* Build configuration list for PBXNativeTarget "tableViewLearn" */;
 			buildPhases = (
-				D4C669FE26BEFC9D00DAFE56 /* Sources */,
-				D4C669FF26BEFC9D00DAFE56 /* Frameworks */,
-				D4C66A0026BEFC9D00DAFE56 /* Resources */,
+				D45ADD1526C19BEE0029A305 /* Sources */,
+				D45ADD1626C19BEE0029A305 /* Frameworks */,
+				D45ADD1726C19BEE0029A305 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = dropdown;
-			productName = dropdown;
-			productReference = D4C66A0226BEFC9D00DAFE56 /* dropdown.app */;
+			name = tableViewLearn;
+			productName = tableViewLearn;
+			productReference = D45ADD1926C19BEE0029A305 /* tableViewLearn.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D4C669FA26BEFC9D00DAFE56 /* Project object */ = {
+		D45ADD1126C19BEE0029A305 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					D4C66A0126BEFC9D00DAFE56 = {
+					D45ADD1826C19BEE0029A305 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = D4C669FD26BEFC9D00DAFE56 /* Build configuration list for PBXProject "dropdown" */;
+			buildConfigurationList = D45ADD1426C19BEE0029A305 /* Build configuration list for PBXProject "tableViewLearn" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,53 +113,44 @@
 				en,
 				Base,
 			);
-			mainGroup = D4C669F926BEFC9D00DAFE56;
-			productRefGroup = D4C66A0326BEFC9D00DAFE56 /* Products */;
+			mainGroup = D45ADD1026C19BEE0029A305;
+			productRefGroup = D45ADD1A26C19BEE0029A305 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4C66A0126BEFC9D00DAFE56 /* dropdown */,
+				D45ADD1826C19BEE0029A305 /* tableViewLearn */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D4C66A0026BEFC9D00DAFE56 /* Resources */ = {
+		D45ADD1726C19BEE0029A305 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C66A0D26BEFC9E00DAFE56 /* Preview Assets.xcassets in Resources */,
-				D4C66A0A26BEFC9E00DAFE56 /* Assets.xcassets in Resources */,
+				D45ADD2426C19BF00029A305 /* Preview Assets.xcassets in Resources */,
+				D45ADD2126C19BF00029A305 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D4C669FE26BEFC9D00DAFE56 /* Sources */ = {
+		D45ADD1526C19BEE0029A305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C66A0826BEFC9D00DAFE56 /* ContentView.swift in Sources */,
-				D4C66A0626BEFC9D00DAFE56 /* dropdownApp.swift in Sources */,
+				D45ADD1F26C19BEE0029A305 /* ContentView.swift in Sources */,
+				D45ADD1D26C19BEE0029A305 /* tableViewLearnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D4C66A1026BEFC9E00DAFE56 /* Debug */ = {
+		D45ADD2726C19BF00029A305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                OTHER_LDFLAGS = (
-                    "-Xlinker",
-                    "-interposable",
-                    "-Xlinker",
-                    "-undefined",
-                    "-Xlinker",
-                    dynamic_lookup,
-                );
-                ENABLE_BITCODE = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -218,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		D4C66A1126BEFC9E00DAFE56 /* Release */ = {
+		D45ADD2826C19BF00029A305 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,58 +263,49 @@
 			};
 			name = Release;
 		};
-		D4C66A1326BEFC9E00DAFE56 /* Debug */ = {
+		D45ADD2A26C19BF00029A305 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-                OTHER_LDFLAGS = (
-                    "-Xlinker",
-                    "-interposable",
-                    "-Xlinker",
-                    "-undefined",
-                    "-Xlinker",
-                    dynamic_lookup,
-                );
-                ENABLE_BITCODE = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = dropdown/dropdown.entitlements;
+				CODE_SIGN_ENTITLEMENTS = tableViewLearn/tableViewLearn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"dropdown/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tableViewLearn/Preview Content\"";
 				DEVELOPMENT_TEAM = ZQNTYXCS7L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = dropdown/Info.plist;
+				INFOPLIST_FILE = tableViewLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.dropdown;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.tableViewLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		D4C66A1426BEFC9E00DAFE56 /* Release */ = {
+		D45ADD2B26C19BF00029A305 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = dropdown/dropdown.entitlements;
+				CODE_SIGN_ENTITLEMENTS = tableViewLearn/tableViewLearn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"dropdown/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tableViewLearn/Preview Content\"";
 				DEVELOPMENT_TEAM = ZQNTYXCS7L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = dropdown/Info.plist;
+				INFOPLIST_FILE = tableViewLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.dropdown;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.tableViewLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -332,25 +314,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4C669FD26BEFC9D00DAFE56 /* Build configuration list for PBXProject "dropdown" */ = {
+		D45ADD1426C19BEE0029A305 /* Build configuration list for PBXProject "tableViewLearn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4C66A1026BEFC9E00DAFE56 /* Debug */,
-				D4C66A1126BEFC9E00DAFE56 /* Release */,
+				D45ADD2726C19BF00029A305 /* Debug */,
+				D45ADD2826C19BF00029A305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4C66A1226BEFC9E00DAFE56 /* Build configuration list for PBXNativeTarget "dropdown" */ = {
+		D45ADD2926C19BF00029A305 /* Build configuration list for PBXNativeTarget "tableViewLearn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4C66A1326BEFC9E00DAFE56 /* Debug */,
-				D4C66A1426BEFC9E00DAFE56 /* Release */,
+				D45ADD2A26C19BF00029A305 /* Debug */,
+				D45ADD2B26C19BF00029A305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D4C669FA26BEFC9D00DAFE56 /* Project object */;
+	rootObject = D45ADD1126C19BEE0029A305 /* Project object */;
 }
