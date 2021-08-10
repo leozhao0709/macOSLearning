@@ -54,6 +54,7 @@ struct TableView: NSViewRepresentable {
         }
 
         func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+            print("...objectValueFor...", parent.data.count)
             let p = parent.data[row]
             guard let identifier = tableColumn?.identifier.rawValue else {
                 return nil
