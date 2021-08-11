@@ -9,26 +9,46 @@ import SwiftUI
 
 struct ContentView: View {
     @State var persons: [Person] = [Person(), Person()]
+    @State var selectedRow: Int?
+    @State var isEditingCell = false
 
     var body: some View {
         VStack {
-            TableView(data: $persons)
-              .frame(width: .infinity, height: .infinity)
-                .background(Color.red)
+            TableView(data: $persons,
+              onSelectedRow: { i in selectedRow = i },
+              isEditingCell: { isEditing in
+                  print("...isEditing...")
+                  isEditingCell = isEditing 
+              }) { row, propertyKey, stringValue in
+                persons[row].setValue(stringValue, forKey: propertyKey)
+            }
 
             HStack {
                 Button(action: { addPerson() }) {
-                    Text("Add")
+                    Text("Add Person")
                 }
-                Button(action: { print("remove..") }) {
+                  .disabled(isEditingCell)
+                Button(action: { removePerson() }) {
                     Text("Remove")
                 }
+                  .disabled(isEditingCell)
             }
         }
     }
 
     private func addPerson() {
         persons.append(Person())
+    }
+
+    private func removePerson() {
+        guard let selectedRow = selectedRow else {
+            return
+        }
+        print("...removePerson...", selectedRow)
+        if selectedRow > -1 {
+            persons.remove(at: selectedRow)
+            self.selectedRow = -1
+        }
     }
 }
 
