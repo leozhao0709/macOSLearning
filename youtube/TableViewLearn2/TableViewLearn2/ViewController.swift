@@ -61,6 +61,10 @@ class ViewController: NSViewController, NSTableViewDataSource {
         return p
     }
 
+    func tableView(_ tableView: NSTableView, setObjectValue object: String?, for tableColumn: NSTableColumn?, row: Int) {
+        data[row] = Int(object!)!
+    }
+
 //    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
 //        guard let identifier = tableColumn?.identifier else {
 //            return nil
