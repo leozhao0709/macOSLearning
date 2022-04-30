@@ -6,6 +6,8 @@ import SwiftUI
 
 struct TableView<T: NSObject>: NSViewRepresentable {
     @Binding var items: [T]
+    @Binding var selectedIndexSet: IndexSet?
+//    var onSelectedRows: (_ indexSet: IndexSet?) -> Void
 
     func makeNSView(context: Context) -> NSScrollView {
         let scrollView = NSScrollView()
@@ -24,7 +26,7 @@ struct TableView<T: NSObject>: NSViewRepresentable {
         Coordinator(parent: self)
     }
 
-    class Coordinator<T: NSObject>: NSObject, NSTableViewDataSource {
+    class Coordinator<T: NSObject>: NSObject, NSTableViewDataSource, NSTableViewDelegate {
         var parent: TableView
         let tableView = NSTableView()
 
@@ -41,7 +43,9 @@ struct TableView<T: NSObject>: NSViewRepresentable {
                     tableView.addTableColumn(tableColumn)
                 }
             }
+            tableView.allowsMultipleSelection = true
             tableView.dataSource = self
+            tableView.delegate = self
         }
 
         func numberOfRows(in tableView: NSTableView) -> Int {
@@ -61,6 +65,11 @@ struct TableView<T: NSObject>: NSViewRepresentable {
             }
 
             parent.items[row].setValue(object, forKey: identifier.rawValue)
+        }
+
+        func tableViewSelectionDidChange(_ notification: Notification) {
+//            parent.onSelectedRows(tableView.selectedRowIndexes)
+            parent.selectedIndexSet = tableView.selectedRowIndexes
         }
     }
 }
