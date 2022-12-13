@@ -19,23 +19,19 @@ struct ContentView: View {
                 TextField("Name", text: $name)
                 DatePicker("", selection: $date, displayedComponents: [.date])
             }.padding()
-
-            Button("Show Me!") {
-                label = "\(name) was here at \(date)"
-            }
-                .buttonStyle(MyButtonStyle())
-                .background(Color.yellow)
+            
+                Button {
+                    label = "\(name) was here at \(date)"
+                } label: {
+                    Text("Show Me!")
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .background(Color.yellow)
+                }
+                .buttonStyle(.plain)
+                .padding()
+        
         }
-
-    }
-}
-
-struct MyButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .frame(width: .infinity)
-            .padding(.vertical, 10)
-            .padding(.horizontal, 20)
 
     }
 }

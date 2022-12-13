@@ -3,28 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4C669CE26BEF49D00DAFE56 /* DatePickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C669CD26BEF49D00DAFE56 /* DatePickApp.swift */; };
-		D4C669D026BEF49D00DAFE56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C669CF26BEF49D00DAFE56 /* ContentView.swift */; };
-		D4C669D226BEF49F00DAFE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C669D126BEF49F00DAFE56 /* Assets.xcassets */; };
-		D4C669D526BEF49F00DAFE56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C669D426BEF49F00DAFE56 /* Preview Assets.xcassets */; };
+		D422EECF293470520003CFAE /* SliderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D422EECE293470520003CFAE /* SliderApp.swift */; };
+		D422EED1293470520003CFAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D422EED0293470520003CFAE /* ContentView.swift */; };
+		D422EED3293470530003CFAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D422EED2293470530003CFAE /* Assets.xcassets */; };
+		D422EED6293470530003CFAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D422EED5293470530003CFAE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D4C669CA26BEF49D00DAFE56 /* DatePick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePick.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C669CD26BEF49D00DAFE56 /* DatePickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickApp.swift; sourceTree = "<group>"; };
-		D4C669CF26BEF49D00DAFE56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D4C669D126BEF49F00DAFE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4C669D426BEF49F00DAFE56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D4C669D626BEF49F00DAFE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D4C669D726BEF49F00DAFE56 /* DatePick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DatePick.entitlements; sourceTree = "<group>"; };
+		D422EECB293470520003CFAE /* Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D422EECE293470520003CFAE /* SliderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderApp.swift; sourceTree = "<group>"; };
+		D422EED0293470520003CFAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D422EED2293470530003CFAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D422EED5293470530003CFAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D422EED7293470530003CFAE /* Slider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Slider.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4C669C726BEF49D00DAFE56 /* Frameworks */ = {
+		D422EEC8293470520003CFAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,39 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D4C669C126BEF49D00DAFE56 = {
+		D422EEC2293470520003CFAE = {
 			isa = PBXGroup;
 			children = (
-				D4C669CC26BEF49D00DAFE56 /* DatePick */,
-				D4C669CB26BEF49D00DAFE56 /* Products */,
+				D422EECD293470520003CFAE /* Slider */,
+				D422EECC293470520003CFAE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D4C669CB26BEF49D00DAFE56 /* Products */ = {
+		D422EECC293470520003CFAE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4C669CA26BEF49D00DAFE56 /* DatePick.app */,
+				D422EECB293470520003CFAE /* Slider.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4C669CC26BEF49D00DAFE56 /* DatePick */ = {
+		D422EECD293470520003CFAE /* Slider */ = {
 			isa = PBXGroup;
 			children = (
-				D4C669CD26BEF49D00DAFE56 /* DatePickApp.swift */,
-				D4C669CF26BEF49D00DAFE56 /* ContentView.swift */,
-				D4C669D126BEF49F00DAFE56 /* Assets.xcassets */,
-				D4C669D626BEF49F00DAFE56 /* Info.plist */,
-				D4C669D726BEF49F00DAFE56 /* DatePick.entitlements */,
-				D4C669D326BEF49F00DAFE56 /* Preview Content */,
+				D422EECE293470520003CFAE /* SliderApp.swift */,
+				D422EED0293470520003CFAE /* ContentView.swift */,
+				D422EED2293470530003CFAE /* Assets.xcassets */,
+				D422EED7293470530003CFAE /* Slider.entitlements */,
+				D422EED4293470530003CFAE /* Preview Content */,
 			);
-			path = DatePick;
+			path = Slider;
 			sourceTree = "<group>";
 		};
-		D4C669D326BEF49F00DAFE56 /* Preview Content */ = {
+		D422EED4293470530003CFAE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D4C669D426BEF49F00DAFE56 /* Preview Assets.xcassets */,
+				D422EED5293470530003CFAE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -74,88 +72,88 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4C669C926BEF49D00DAFE56 /* DatePick */ = {
+		D422EECA293470520003CFAE /* Slider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4C669DA26BEF49F00DAFE56 /* Build configuration list for PBXNativeTarget "DatePick" */;
+			buildConfigurationList = D422EEDA293470530003CFAE /* Build configuration list for PBXNativeTarget "Slider" */;
 			buildPhases = (
-				D4C669C626BEF49D00DAFE56 /* Sources */,
-				D4C669C726BEF49D00DAFE56 /* Frameworks */,
-				D4C669C826BEF49D00DAFE56 /* Resources */,
+				D422EEC7293470520003CFAE /* Sources */,
+				D422EEC8293470520003CFAE /* Frameworks */,
+				D422EEC9293470520003CFAE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DatePick;
-			productName = DatePick;
-			productReference = D4C669CA26BEF49D00DAFE56 /* DatePick.app */;
+			name = Slider;
+			productName = Slider;
+			productReference = D422EECB293470520003CFAE /* Slider.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D4C669C226BEF49D00DAFE56 /* Project object */ = {
+		D422EEC3293470520003CFAE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					D4C669C926BEF49D00DAFE56 = {
-						CreatedOnToolsVersion = 12.5.1;
+					D422EECA293470520003CFAE = {
+						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = D4C669C526BEF49D00DAFE56 /* Build configuration list for PBXProject "DatePick" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = D422EEC6293470520003CFAE /* Build configuration list for PBXProject "Slider" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D4C669C126BEF49D00DAFE56;
-			productRefGroup = D4C669CB26BEF49D00DAFE56 /* Products */;
+			mainGroup = D422EEC2293470520003CFAE;
+			productRefGroup = D422EECC293470520003CFAE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4C669C926BEF49D00DAFE56 /* DatePick */,
+				D422EECA293470520003CFAE /* Slider */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D4C669C826BEF49D00DAFE56 /* Resources */ = {
+		D422EEC9293470520003CFAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C669D526BEF49F00DAFE56 /* Preview Assets.xcassets in Resources */,
-				D4C669D226BEF49F00DAFE56 /* Assets.xcassets in Resources */,
+				D422EED6293470530003CFAE /* Preview Assets.xcassets in Resources */,
+				D422EED3293470530003CFAE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D4C669C626BEF49D00DAFE56 /* Sources */ = {
+		D422EEC7293470520003CFAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C669D026BEF49D00DAFE56 /* ContentView.swift in Sources */,
-				D4C669CE26BEF49D00DAFE56 /* DatePickApp.swift in Sources */,
+				D422EED1293470520003CFAE /* ContentView.swift in Sources */,
+				D422EECF293470520003CFAE /* SliderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D4C669D826BEF49F00DAFE56 /* Debug */ = {
+		D422EED8293470530003CFAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -182,7 +180,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -200,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -210,14 +207,13 @@
 			};
 			name = Debug;
 		};
-		D4C669D926BEF49F00DAFE56 /* Release */ = {
+		D422EED9293470530003CFAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -244,7 +240,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -256,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -265,56 +260,56 @@
 			};
 			name = Release;
 		};
-		D4C669DB26BEF49F00DAFE56 /* Debug */ = {
+		D422EEDB293470530003CFAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DatePick/DatePick.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = Slider/Slider.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"DatePick/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Slider/Preview Content\"";
 				DEVELOPMENT_TEAM = ZQNTYXCS7L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DatePick/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.DatePick;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.Slider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		D4C669DC26BEF49F00DAFE56 /* Release */ = {
+		D422EEDC293470530003CFAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DatePick/DatePick.entitlements;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = Slider/Slider.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"DatePick/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Slider/Preview Content\"";
 				DEVELOPMENT_TEAM = ZQNTYXCS7L;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DatePick/Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.DatePick;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.Slider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -322,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4C669C526BEF49D00DAFE56 /* Build configuration list for PBXProject "DatePick" */ = {
+		D422EEC6293470520003CFAE /* Build configuration list for PBXProject "Slider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4C669D826BEF49F00DAFE56 /* Debug */,
-				D4C669D926BEF49F00DAFE56 /* Release */,
+				D422EED8293470530003CFAE /* Debug */,
+				D422EED9293470530003CFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4C669DA26BEF49F00DAFE56 /* Build configuration list for PBXNativeTarget "DatePick" */ = {
+		D422EEDA293470530003CFAE /* Build configuration list for PBXNativeTarget "Slider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4C669DB26BEF49F00DAFE56 /* Debug */,
-				D4C669DC26BEF49F00DAFE56 /* Release */,
+				D422EEDB293470530003CFAE /* Debug */,
+				D422EEDC293470530003CFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D4C669C226BEF49D00DAFE56 /* Project object */;
+	rootObject = D422EEC3293470520003CFAE /* Project object */;
 }

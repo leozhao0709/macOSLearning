@@ -48,6 +48,7 @@ struct ContentView: View {
 //                TableColumn("Family Name", value: \.familyName!)
 //            }
             TableView(items: $persons, selectedIndexSet: $selectedIndexSet)
+
             HStack {
                 Button("Add new person") {
                     addNewPerson()

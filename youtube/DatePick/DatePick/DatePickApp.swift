@@ -12,8 +12,6 @@ struct DatePickApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-              .frame(maxWidth: .infinity, maxHeight: .infinity)
-              .frame(minWidth: 480, minHeight: 300)
         }
     }
 
